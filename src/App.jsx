@@ -183,7 +183,7 @@ const App = () => {
           />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/faq" element={<FAQ />} /> {/* Ajoutez cette ligne */}
+          <Route path="/faq" element={<FAQ />} /> 
         </Routes>
         <Footer /> 
       </div>
