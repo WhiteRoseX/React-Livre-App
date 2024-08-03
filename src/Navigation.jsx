@@ -23,10 +23,11 @@ const Navigation = () => {
           </svg>
         </button>
         <div 
-          className={`md:flex md:items-center md:space-x-4 absolute md:static top-16 left-0 w-full md:w-auto bg-blue-600 transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0 md:block`}
+          className={`md:flex md:items-center md:space-x-4 absolute z-10 md:static top-16 left-0 w-full md:w-auto bg-blue-600 transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0 md:block`}
         >
           <Link to="/" className="block px-3 py-2 rounded-md text-white hover:bg-blue-700 transition duration-300 ease-in-out">Acceuil</Link>
           <Link to="/about" className="block px-3 py-2 rounded-md text-white hover:bg-blue-700 transition duration-300 ease-in-out">À propos</Link>
+          <Link to="/contact" className="block px-3 py-2 rounded-md text-white hover:bg-blue-700 transition duration-300 ease-in-out ">Contact</Link> {/* Ajoutez ce lien */}
         </div>
       </div>
     </nav>

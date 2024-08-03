@@ -5,6 +5,7 @@ import anime from 'animejs';
 import About from './About';
 import Navigation from './Navigation';
 import Footer from './Footer'; 
+import Contact from './Contact'
 import confetti from 'canvas-confetti';
 
 const App = () => {
@@ -89,7 +90,7 @@ const App = () => {
                       ))}
                     </h1>
                     <p className="mt-4 text-lg sm:text-xl hero-subtitle">
-                      La meilleure plateforme pour acheter et vendre des livres scolaires d'occasion.
+                      La meilleure plateforme française pour acheter et vendre des livres scolaires d'occasion pour nos étudiants.
                     </p>
                     <div className="mt-8">
                       <Link
@@ -154,7 +155,7 @@ const App = () => {
             }
           />
           <Route path="/about" element={<About />} />
-
+          <Route path="/contact" element={<Contact />} /> 
         </Routes>
         <Footer /> 
       </div>
