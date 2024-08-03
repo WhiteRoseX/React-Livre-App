@@ -3,7 +3,7 @@ import anime from 'animejs';
 
 const About = () => {
   useEffect(() => {
-    // Animation pour le titre principal
+
     anime({
       targets: '.about-title',
       opacity: [0, 1],
@@ -12,17 +12,17 @@ const About = () => {
       duration: 1000,
     });
 
-    // Animation pour les paragraphes
+
     anime({
       targets: '.about-text',
       opacity: [0, 1],
       translateY: [20, 0],
-      delay: anime.stagger(200), // Délai entre chaque élément
+      delay: anime.stagger(200), 
       easing: 'easeOutExpo',
       duration: 800,
     });
 
-    // Animation pour les membres de l'équipe
+    
     anime({
       targets: '.team-member',
       opacity: [0, 1],
