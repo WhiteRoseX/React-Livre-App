@@ -8,3 +8,45 @@
   transition: 0.5;
   box-sizing: border-box;
 } 
+
+/* styles.css (ou équivalent) */
+.book-item {
+  display: inline-block;
+  width: 100px;
+  height: 150px;
+  margin: 10px;
+  background: linear-gradient(to bottom, #F3F4F6, #EFF6FF);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.background-gradient-lk{
+  background: linear-gradient(to bottom, #F3F4F6, #dfecfd);
+}
+
+.book1-bg{
+  background-image: url(./assets/photo1-book.jpg);
+  background-size: contain;
+}
+
+.book2-bg{
+  background-image: url(./assets/photo2-book.jpg);
+  background-size: contain;
+}
+
+.book3-bg{
+  background-image: url(./assets/photo3-book.jpg);
+  background-size: contain;
+}
+
+.book4-bg{
+  background-image: url(./assets/photo4-book.jpeg);
+  background-size: contain;
+}
+
+.book5-bg{
+  background-image: url(./assets/photo5-book.jpg);
+  background-size: contain;
+}

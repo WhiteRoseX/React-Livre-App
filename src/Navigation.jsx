@@ -27,7 +27,8 @@ const Navigation = () => {
         >
           <Link to="/" className="block px-3 py-2 rounded-md text-white hover:bg-blue-700 transition duration-300 ease-in-out">Acceuil</Link>
           <Link to="/about" className="block px-3 py-2 rounded-md text-white hover:bg-blue-700 transition duration-300 ease-in-out">À propos</Link>
-          <Link to="/contact" className="block px-3 py-2 rounded-md text-white hover:bg-blue-700 transition duration-300 ease-in-out ">Contact</Link> {/* Ajoutez ce lien */}
+          <Link to="/faq" className="block px-3 py-2 rounded-md text-white hover:bg-blue-700 transition duration-300 ease-in-out ">FAQ</Link>
+          <Link to="/contact" className="block px-3 py-2 rounded-md text-white hover:bg-blue-700 transition duration-300 ease-in-out ">Contact</Link> 
         </div>
       </div>
     </nav>

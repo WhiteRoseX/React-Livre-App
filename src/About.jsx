@@ -61,14 +61,14 @@ const About = () => {
             <div className="team-member flex flex-col items-center text-center">
               <div className="w-24 h-24 bg-gray-200 rounded-full"></div>
               <h3 className="mt-2 text-lg font-medium text-gray-900">Louis Reboul</h3>
-              <p className="text-sm text-gray-600">CTO</p>
+              <p className="text-sm text-gray-600">PDG</p>
             </div>
             <div className="team-member flex flex-col items-center text-center">
               <div className="w-24 h-24 bg-gray-200 rounded-full"></div>
-              <h3 className="mt-2 text-lg font-medium text-gray-900">L'indien</h3>
-              <p className="text-sm text-gray-600">CTO</p>
+              <h3 className="mt-2 text-lg font-medium text-gray-900">Ps</h3>
+              <p className="text-sm text-gray-600">PDG</p>
             </div>
-            
+
           </div>
         </div>
       </div>

@@ -7,6 +7,7 @@ import Navigation from './Navigation';
 import Footer from './Footer'; 
 import Contact from './Contact'
 import confetti from 'canvas-confetti';
+import FAQ from './FAQ';
 
 const App = () => {
   useEffect(() => {
@@ -70,6 +71,16 @@ const App = () => {
       });
     };
 
+    anime({
+      targets: '.book-item',
+      translateX: () => anime.random(-10, 10),
+      translateY: () => anime.random(-10, 10),
+      duration: 2000,
+      easing: 'easeInOutQuad',
+      loop: true,
+      direction: 'alternate',
+    });
+
     launchConfetti();
   }, []);
 
@@ -105,7 +116,7 @@ const App = () => {
 
                 <section className="py-12">
                   <div className="container mx-auto px-6 text-center">
-                    <h2 className="text-3xl font-bold text-gray-900">Pourquoi Choisir ÉchangeLivre ?</h2>
+                    <h2 className="text-3xl font-bold text-gray-900 p-3">Pourquoi Choisir ÉchangeLivre ?</h2>
                     <p className="mt-4 text-lg text-gray-600">
                       ÉchangeLivre vous aide à économiser de l'argent et à réduire les déchets en connectant les étudiants qui souhaitent acheter ou vendre des livres scolaires d'occasion.
                     </p>
@@ -134,8 +145,24 @@ const App = () => {
                     </div>
                   </div>
                 </section>
+              
+                               
+               <section className="py-12">
+                  <div className="container mx-auto px-6 text-center">
+                    <h2 className="text-3xl font-bold text-gray-900 mb-4 p-2">
+                      Livres Populaires
+                    </h2>
+                    <div className="flex flex-wrap justify-center gap-5">
+                      <div className="book-item book1-bg"></div>
+                      <div className="book-item book2-bg"></div>
+                      <div className="book-item book3-bg"></div>
+                      <div className="book-item book4-bg"></div>
+                      <div className="book-item book5-bg"></div>
+                    </div>
+                  </div>
+                </section>
 
-                <section className="bg-blue-50 py-12">
+                <section className="background-gradient-lk py-12">
                   <div className="container mx-auto px-6 text-center">
                     <h2 className="text-3xl font-bold text-gray-900">Prêt à Commencer ?</h2>
                     <p className="mt-4 text-lg text-gray-600">
@@ -155,7 +182,8 @@ const App = () => {
             }
           />
           <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} /> 
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/faq" element={<FAQ />} /> {/* Ajoutez cette ligne */}
         </Routes>
         <Footer /> 
       </div>
